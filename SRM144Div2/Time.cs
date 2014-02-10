@@ -11,7 +11,6 @@ class Time
     public static string whatTime(int seconds)
     {
         TimeSpan ts = TimeSpan.FromSeconds(seconds);
-        string result = ts.Hours + ":" + ts.Minutes + ":" + ts.Seconds;
-        return result;
+        return string.Format("{0}:{1}:{2}", ts.Hours, ts.Minutes, ts.Seconds);
     }
 }
